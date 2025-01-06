@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>Icon/fly.png</file>
+    <file>Icon/flying.png</file>
+    <file>Icon/geo.png</file>
+    <file>Icon/local.png</file>
+    <file>Icon/nexting.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(
+    spread: pad,
+    x1: 1, y1: 1,
+    x2: 0, y2: 0,
+    stop: 0 rgba(0, 191, 255, 255), /* Голубой */
+    stop: 0.5 rgba(0, 0, 255, 255), /* Синий */
+    stop: 1 rgba(0, 191, 255, 255) /* Темно-синий (опционально) */
+);
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>591</width>
+     <height>831</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font-size: 16pt;
+background-color: none;
+border: none;
+
+
+ background-color:  rgba(255, 255, 255, 0.2); /* Градиент */
+                border: none; /* Убираем рамку */
+                color: white; /* Цвет текста */
+                padding: 20px; /* Внутренний отступ */
+                font-size: 16px; /* Размер шрифта */
+                border-radius: 30px; /* Закругленные углы */
+padding: 25px; /* Внутренний отступ */</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="title">
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+        <bold>true</bold>
+        <underline>false</underline>
+        <stylestrategy>PreferDefault</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font-size: 30pt;
+background-color: none;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Плановый тариф</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="styleSheet">
+       <string notr="true"> 
+
+QComboBox {
+    border: 2px solid #D3D3D3; /* Рамка с цветом */
+    border-radius: 15px; /* Закругленные углы */
+    background-color: #FFFFFF; /* Цвет фона */
+    color: #333333; /* Цвет текста */
+    padding: 15px; /* Внутренний отступ */
+    font-size: 20px; /* Размер шрифта */
+
+}
+
+QComboBox:drop-down {
+    border: none; /* Убирает рамку у кнопки выпадающего списка */
+ 
+}
+
+QComboBox:hover {
+    border-color: #333333; /* Цвет рамки при наведении */
+}
+
+QComboBox:item {
+    background-color: #FFFFFF; /* Цвет фона элементов списка */
+    color: #333333; /* Цвет текста элементов списка */
+}
+
+QComboBox:item:selected {
+    background-color: #D3D3D3; /* Цвет фона выбранного элемента */
+    color: #FFFFFF; /* Цвет текста выбранного элемента */
+}
+
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Выберите</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Эконом</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Комфорт</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Бизнес</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Первый класс</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="info">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font-size: 16pt;
+background-color: none;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>
+
+Выбирайте в соответствии 
+с вашими условиями.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="nextButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+                background-color:  rgba(255, 255, 255, 0.2); /* Градиент */
+                border: none; /* Убираем рамку */
+                color: white; /* Цвет текста */
+                padding: 20px; /* Внутренний отступ */
+                font-size: 16px; /* Размер шрифта */
+                border-radius: 15px; /* Закругленные углы */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+                transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+            }
+            QPushButton:hover {
+                background-color: rgba(255, 255, 255, 0.2); /* Изменение фона при наведении */
+                transform: translateY(-2px); /* Подъем при наведении */
+            }
+            QPushButton:pressed {
+                background-color: rgba(255, 255, 255, 0.1); /* Изменение фона при нажатии */
+                transform: translateY(1px); /* Эффект нажатия */
+            }</string>
+      </property>
+      <property name="text">
+       <string> Далее</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>

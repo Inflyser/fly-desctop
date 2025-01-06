@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1237</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(
+    spread: pad,
+    x1: 1, y1: 1,
+    x2: 0, y2: 0,
+    stop: 0 rgba(0, 191, 255, 255), /* Голубой */
+    stop: 0.5 rgba(0, 0, 255, 255), /* Синий */
+    stop: 1 rgba(0, 191, 255, 255) /* Темно-синий (опционально) */
+);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1241</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-size: 16pt;
+background-color: none;
+border: none;
+
+
+ background-color:  rgba(255, 255, 255, 0.2); /* Градиент */
+                border: none; /* Убираем рамку */
+                color: white; /* Цвет текста */
+                padding: 20px; /* Внутренний отступ */
+                font-size: 16px; /* Размер шрифта */
+                border-radius: 30px; /* Закругленные углы */
+padding: 25px; /* Внутренний отступ */</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>1201</width>
+       <height>741</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>120</number>
+     </attribute>
+    </widget>
+    <widget class="QPushButton" name="nextButton_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>20</y>
+       <width>191</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+                background-color:  rgba(255, 255, 255, 0.2); /* Градиент */
+                border: none; /* Убираем рамку */
+                color: white; /* Цвет текста */
+                padding: 20px; /* Внутренний отступ */
+                font-size: 20px; /* Размер шрифта */
+
+
+
+                border-radius: 15px; /* Закругленные углы */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+                transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+            }
+            QPushButton:hover {
+                background-color: rgba(255, 255, 255, 0.2); /* Изменение фона при наведении */
+                transform: translateY(-2px); /* Подъем при наведении */
+            }
+            QPushButton:pressed {
+                background-color: rgba(255, 255, 255, 0.1); /* Изменение фона при нажатии */
+                transform: translateY(1px); /* Эффект нажатия */
+            }</string>
+     </property>
+     <property name="text">
+      <string>DELETE</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nextButton_3">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>20</y>
+       <width>191</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+                background-color:  rgba(255, 255, 255, 0.2); /* Градиент */
+                border: none; /* Убираем рамку */
+                color: white; /* Цвет текста */
+                padding: 20px; /* Внутренний отступ */
+                font-size: 20px; /* Размер шрифта */
+
+
+
+                border-radius: 15px; /* Закругленные углы */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+                transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+            }
+            QPushButton:hover {
+                background-color: rgba(255, 255, 255, 0.2); /* Изменение фона при наведении */
+                transform: translateY(-2px); /* Подъем при наведении */
+            }
+            QPushButton:pressed {
+                background-color: rgba(255, 255, 255, 0.1); /* Изменение фона при нажатии */
+                transform: translateY(1px); /* Эффект нажатия */
+            }</string>
+     </property>
+     <property name="text">
+      <string>EDIT</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>181</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>20</y>
+       <width>241</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Name</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>20</y>
+       <width>241</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Date</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
